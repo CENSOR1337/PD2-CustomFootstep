@@ -1,0 +1,62 @@
+{
+    "materialDefine": {
+        "default": "asphalt",
+        "plaster": "asphalt"
+    },
+    "soundBank": {
+        "THIS_IS_TEMPLATE": {
+            "CROUCH": [],
+            "RUN": [],
+            "WALK": [],
+            "LAND": []
+        },
+        "asphalt": {
+            "CROUCH": [
+                "walk/walk_asphalt_01",
+                "walk/walk_asphalt_02",
+                "walk/walk_asphalt_03",
+                "walk/walk_asphalt_04",
+                "walk/walk_asphalt_05",
+                "walk/walk_asphalt_06",
+                "walk/walk_asphalt_07",
+                "walk/walk_asphalt_08"
+            ],
+            "RUN": [
+                "sprint/sprint_asphalt_01",
+                "sprint/sprint_asphalt_02",
+                "sprint/sprint_asphalt_03",
+                "sprint/sprint_asphalt_04",
+                "sprint/sprint_asphalt_05",
+                "sprint/sprint_asphalt_06",
+                "sprint/sprint_asphalt_08",
+                "sprint/sprint_asphalt_09",
+                "sprint/sprint_asphalt_10",
+                "sprint/sprint_asphalt_11",
+                "sprint/sprint_asphalt_12",
+                "sprint/sprint_asphalt_13",
+                "sprint/sprint_asphalt_14",
+                "sprint/sprint_asphalt_15",
+                "sprint/sprint_asphalt_16",
+                "sprint/sprint_asphalt_17"
+            ],
+            "WALK": [
+                "run/run_asphalt_01",
+                "run/run_asphalt_02",
+                "run/run_asphalt_03",
+                "run/run_asphalt_04",
+                "run/run_asphalt_05",
+                "run/run_asphalt_06",
+                "run/run_asphalt_07",
+                "run/run_asphalt_08"
+            ],
+            "LAND": [
+                "landing/landing_asphalt_01",
+                "landing/landing_asphalt_02",
+                "landing/landing_asphalt_03",
+                "landing/landing_asphalt_04",
+                "landing/landing_asphalt_05",
+                "landing/landing_asphalt_06"
+            ]
+        }
+    }
+}

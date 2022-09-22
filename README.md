@@ -1,1 +1,46 @@
-# PD2-CustomFootstep
+# pd2-custom-footstep-sound
+
+## Materials list
+```json
+[
+    "asphalt",
+    "carpet",
+    "ceramic",
+    "cloth",
+    "cloth_stuffed",
+    "concrete",
+    "dirt",
+    "fence",
+    "flesh",
+    "foliage",
+    "glass_breakable",
+    "glass_unbreakable",
+    "grass",
+    "gravel",
+    "hardwood",
+    "iron",
+    "marble",
+    "metal",
+    "metal_catwalk",
+    "metal_chassis",
+    "metal_hollow",
+    "no_material",
+    "paper",
+    "parket",
+    "plaster",
+    "plastic",
+    "rubber",
+    "sand",
+    "sheet_metal",
+    "shield",
+    "silent_material",
+    "steel",
+    "stone",
+    "thin_layer",
+    "tile",
+    "water_deep",
+    "water_puddle",
+    "water_shallow",
+    "wood"
+]
+```

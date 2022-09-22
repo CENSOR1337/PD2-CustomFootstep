@@ -1,0 +1,15 @@
+<mod name="CustomFootstepSound" author="CENSOR_1337" core_class="core.lua" post_hook="playersound" global_key="CustomFootstepSound" min_lib_ver="3.38">
+	<Localization directory="localization" default="en.json" />
+	<AddFiles directory="Assets" force="false" auto_generate="true">
+		<auto_generate>
+			<set>
+				<unit load="true" />
+			</set>
+		</auto_generate>
+	</AddFiles>
+	<Options build_menu="false">
+		<options>
+			<option type="boolean" default_value="true" desc_id="test" name="test" />
+		</options>
+	</Options>
+</mod>
