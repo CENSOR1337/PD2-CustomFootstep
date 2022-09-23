@@ -1,7 +1,25 @@
 {
     "materialDefine": {
         "default": "asphalt",
-        "plaster": "asphalt"
+        "concrete": "concrete",
+        "water_deep": "puddle",
+        "water_puddle": "puddle",
+        "water_shallow": "puddle",
+        "wood": "wood",
+        "tile": "tile",
+        "dirt": "soil",
+        "gravel": "gravel",
+        "metal": "metal",
+        "metal_catwalk": "metal",
+        "metal_chassis": "metal",
+        "metal_hollow": "metal",
+        "steel": "metal",
+        "plastic": "plastic",
+        "glass": "glass",
+        "glass_breakable": "glass",
+        "glass_unbreakable": "whole_glass",
+        "grass": "grass",
+        "foliage": "grass"
     },
     "soundBank": {
         "THIS_IS_TEMPLATE": {
@@ -12,50 +30,568 @@
         },
         "asphalt": {
             "CROUCH": [
-                "sounds/walk/walk_asphalt_01",
-                "sounds/walk/walk_asphalt_02",
-                "sounds/walk/walk_asphalt_03",
-                "sounds/walk/walk_asphalt_04",
-                "sounds/walk/walk_asphalt_05",
-                "sounds/walk/walk_asphalt_06",
-                "sounds/walk/walk_asphalt_07",
-                "sounds/walk/walk_asphalt_08"
+                "sounds/walk_asphalt_01",
+                "sounds/walk_asphalt_02",
+                "sounds/walk_asphalt_03",
+                "sounds/walk_asphalt_04",
+                "sounds/walk_asphalt_05",
+                "sounds/walk_asphalt_06",
+                "sounds/walk_asphalt_07",
+                "sounds/walk_asphalt_08"
             ],
             "RUN": [
-                "sounds/sprint/sprint_asphalt_01",
-                "sounds/sprint/sprint_asphalt_02",
-                "sounds/sprint/sprint_asphalt_03",
-                "sounds/sprint/sprint_asphalt_04",
-                "sounds/sprint/sprint_asphalt_05",
-                "sounds/sprint/sprint_asphalt_06",
-                "sounds/sprint/sprint_asphalt_08",
-                "sounds/sprint/sprint_asphalt_09",
-                "sounds/sprint/sprint_asphalt_10",
-                "sounds/sprint/sprint_asphalt_11",
-                "sounds/sprint/sprint_asphalt_12",
-                "sounds/sprint/sprint_asphalt_13",
-                "sounds/sprint/sprint_asphalt_14",
-                "sounds/sprint/sprint_asphalt_15",
-                "sounds/sprint/sprint_asphalt_16",
-                "sounds/sprint/sprint_asphalt_17"
+                "sounds/sprint_asphalt_01",
+                "sounds/sprint_asphalt_02",
+                "sounds/sprint_asphalt_03",
+                "sounds/sprint_asphalt_04",
+                "sounds/sprint_asphalt_05",
+                "sounds/sprint_asphalt_06",
+                "sounds/sprint_asphalt_08",
+                "sounds/sprint_asphalt_09",
+                "sounds/sprint_asphalt_10",
+                "sounds/sprint_asphalt_11",
+                "sounds/sprint_asphalt_12",
+                "sounds/sprint_asphalt_13",
+                "sounds/sprint_asphalt_14",
+                "sounds/sprint_asphalt_15",
+                "sounds/sprint_asphalt_16",
+                "sounds/sprint_asphalt_17"
             ],
             "WALK": [
-                "sounds/run/run_asphalt_01",
-                "sounds/run/run_asphalt_02",
-                "sounds/run/run_asphalt_03",
-                "sounds/run/run_asphalt_04",
-                "sounds/run/run_asphalt_05",
-                "sounds/run/run_asphalt_06",
-                "sounds/run/run_asphalt_07",
-                "sounds/run/run_asphalt_08"
+                "sounds/run_asphalt_01",
+                "sounds/run_asphalt_02",
+                "sounds/run_asphalt_03",
+                "sounds/run_asphalt_04",
+                "sounds/run_asphalt_05",
+                "sounds/run_asphalt_06",
+                "sounds/run_asphalt_07",
+                "sounds/run_asphalt_08"
             ],
             "LAND": [
-                "sounds/landing/landing_asphalt_01",
-                "sounds/landing/landing_asphalt_02",
-                "sounds/landing/landing_asphalt_03",
-                "sounds/landing/landing_asphalt_04",
-                "sounds/landing/landing_asphalt_05",
-                "sounds/landing/landing_asphalt_06"
+                "sounds/landing_asphalt_01",
+                "sounds/landing_asphalt_02",
+                "sounds/landing_asphalt_03",
+                "sounds/landing_asphalt_04",
+                "sounds/landing_asphalt_05",
+                "sounds/landing_asphalt_06"
+            ]
+        },
+        "concrete": {
+            "CROUCH": [
+                "sounds/walk_concrete1",
+                "sounds/walk_concrete2",
+                "sounds/walk_concrete3",
+                "sounds/walk_concrete4",
+                "sounds/walk_concrete5",
+                "sounds/walk_concrete6"
+            ],
+            "RUN": [
+                "sounds/sprint_asphalt_01",
+                "sounds/sprint_asphalt_02",
+                "sounds/sprint_asphalt_03",
+                "sounds/sprint_asphalt_04",
+                "sounds/sprint_asphalt_05",
+                "sounds/sprint_asphalt_06",
+                "sounds/sprint_asphalt_08",
+                "sounds/sprint_asphalt_09",
+                "sounds/sprint_asphalt_10",
+                "sounds/sprint_asphalt_11",
+                "sounds/sprint_asphalt_12",
+                "sounds/sprint_asphalt_13",
+                "sounds/sprint_asphalt_14",
+                "sounds/sprint_asphalt_15",
+                "sounds/sprint_asphalt_16",
+                "sounds/sprint_asphalt_17"
+            ],
+            "WALK": [
+                "sounds/run_concrete1",
+                "sounds/run_concrete2",
+                "sounds/run_concrete3",
+                "sounds/run_concrete4",
+                "sounds/run_concrete5",
+                "sounds/run_concrete6"
+            ],
+            "LAND": [
+                "sounds/landing_concrete1",
+                "sounds/landing_concrete2",
+                "sounds/landing_concrete3"
+            ]
+        },
+        "puddle": {
+            "CROUCH": [
+                "sounds/walk_puddle_01",
+                "sounds/walk_puddle_02",
+                "sounds/walk_puddle_03",
+                "sounds/walk_puddle_04",
+                "sounds/walk_puddle_05",
+                "sounds/walk_puddle_06",
+                "sounds/walk_puddle_07",
+                "sounds/walk_puddle_08",
+                "sounds/walk_puddle_09"
+            ],
+            "RUN": [
+                "sounds/sprint_puddle_01",
+                "sounds/sprint_puddle_02",
+                "sounds/sprint_puddle_03",
+                "sounds/sprint_puddle_04",
+                "sounds/sprint_puddle_05",
+                "sounds/sprint_puddle_06",
+                "sounds/sprint_puddle_07",
+                "sounds/sprint_puddle_08",
+                "sounds/sprint_puddle_09",
+                "sounds/sprint_puddle_10"
+            ],
+            "WALK": [
+                "sounds/run_puddle_01",
+                "sounds/run_puddle_02",
+                "sounds/run_puddle_03",
+                "sounds/run_puddle_04",
+                "sounds/run_puddle_05",
+                "sounds/run_puddle_06",
+                "sounds/run_puddle_07",
+                "sounds/run_puddle_08",
+                "sounds/run_puddle_09"
+            ],
+            "LAND": [
+                "sounds/landing_puddle_01",
+                "sounds/landing_puddle_02",
+                "sounds/landing_puddle_03",
+                "sounds/landing_puddle_04"
+            ]
+        },
+        "wood": {
+            "CROUCH": [
+                "sounds/walk_wood_01",
+                "sounds/walk_wood_02",
+                "sounds/walk_wood_03",
+                "sounds/walk_wood_04",
+                "sounds/walk_wood_05",
+                "sounds/walk_wood_06",
+                "sounds/walk_wood_07",
+                "sounds/walk_wood_08",
+                "sounds/walk_wood_09",
+                "sounds/walk_wood_10",
+                "sounds/walk_wood_12",
+                "sounds/walk_wood_13",
+                "sounds/walk_wood_14",
+                "sounds/walk_wood_15",
+                "sounds/walk_wood_16",
+                "sounds/walk_wood_17",
+                "sounds/walk_wood_18",
+                "sounds/walk_wood_19",
+                "sounds/walk_wood_20",
+                "sounds/walk_wood_21",
+                "sounds/walk_wood_22",
+                "sounds/walk_wood_23",
+                "sounds/walk_wood_24"
+            ],
+            "RUN": [
+                "sounds/sprint_wood_01",
+                "sounds/sprint_wood_02",
+                "sounds/sprint_wood_03",
+                "sounds/sprint_wood_04",
+                "sounds/sprint_wood_05",
+                "sounds/sprint_wood_06",
+                "sounds/sprint_wood_07",
+                "sounds/sprint_wood_08",
+                "sounds/sprint_wood_09",
+                "sounds/sprint_wood_10",
+                "sounds/sprint_wood_11",
+                "sounds/sprint_wood_12",
+                "sounds/sprint_wood_13"
+            ],
+            "WALK": [
+                "sounds/run_wood_01",
+                "sounds/run_wood_02",
+                "sounds/run_wood_03",
+                "sounds/run_wood_04",
+                "sounds/run_wood_05",
+                "sounds/run_wood_06",
+                "sounds/run_wood_07",
+                "sounds/run_wood_08",
+                "sounds/run_wood_09",
+                "sounds/run_wood_10"
+            ],
+            "LAND": [
+                "sounds/landing_wood_01",
+                "sounds/landing_wood_02",
+                "sounds/landing_wood_03",
+                "sounds/landing_wood_04",
+                "sounds/landing_wood_05",
+                "sounds/landing_wood_06",
+                "sounds/landing_wood_07",
+                "sounds/landing_wood_08",
+                "sounds/landing_wood_09"
+            ]
+        },
+        "tile": {
+            "CROUCH": [
+                "sounds/walk_tile_01",
+                "sounds/walk_tile_02",
+                "sounds/walk_tile_03",
+                "sounds/walk_tile_04",
+                "sounds/walk_tile_05",
+                "sounds/walk_tile_06",
+                "sounds/walk_tile_07",
+                "sounds/walk_tile_08",
+                "sounds/walk_tile_09",
+                "sounds/walk_tile_10",
+                "sounds/walk_tile_11",
+                "sounds/walk_tile_12"
+            ],
+            "RUN": [
+                "sounds/sprint_tile_01",
+                "sounds/sprint_tile_02",
+                "sounds/sprint_tile_03",
+                "sounds/sprint_tile_04",
+                "sounds/sprint_tile_05",
+                "sounds/sprint_tile_06",
+                "sounds/sprint_tile_07",
+                "sounds/sprint_tile_08",
+                "sounds/sprint_tile_09",
+                "sounds/sprint_tile_10",
+                "sounds/sprint_tile_11",
+                "sounds/sprint_tile_12"
+            ],
+            "WALK": [
+                "sounds/run_tile_01",
+                "sounds/run_tile_02",
+                "sounds/run_tile_03",
+                "sounds/run_tile_04",
+                "sounds/run_tile_05",
+                "sounds/run_tile_06",
+                "sounds/run_tile_07",
+                "sounds/run_tile_08",
+                "sounds/run_tile_09",
+                "sounds/run_tile_10",
+                "sounds/run_tile_11",
+                "sounds/run_tile_12"
+            ],
+            "LAND": [
+                "sounds/landing_tile_01",
+                "sounds/landing_tile_02",
+                "sounds/landing_tile_03",
+                "sounds/landing_tile_04"
+            ]
+        },
+        "soil": {
+            "CROUCH": [
+                "sounds/soil_walk_01",
+                "sounds/soil_walk_02",
+                "sounds/soil_walk_03",
+                "sounds/soil_walk_04",
+                "sounds/soil_walk_05",
+                "sounds/soil_walk_06",
+                "sounds/soil_walk_07",
+                "sounds/soil_walk_08"
+            ],
+            "RUN": [
+                "sounds/soil_run_01",
+                "sounds/soil_run_02",
+                "sounds/soil_run_03",
+                "sounds/soil_run_04",
+                "sounds/soil_run_05",
+                "sounds/soil_run_06",
+                "sounds/soil_run_07",
+                "sounds/soil_run_08"
+            ],
+            "WALK": [
+                "sounds/soil_sprint_01",
+                "sounds/soil_sprint_02",
+                "sounds/soil_sprint_03",
+                "sounds/soil_sprint_04",
+                "sounds/soil_sprint_05",
+                "sounds/soil_sprint_06",
+                "sounds/soil_sprint_07",
+                "sounds/soil_sprint_08"
+            ],
+            "LAND": [
+                "sounds/soil_landing_01",
+                "sounds/soil_landing_02",
+                "sounds/soil_landing_03",
+                "sounds/soil_landing_04"
+            ]
+        },
+        "gravel": {
+            "CROUCH": [
+                "sounds/walk_gravel_01",
+                "sounds/walk_gravel_02",
+                "sounds/walk_gravel_03",
+                "sounds/walk_gravel_04",
+                "sounds/walk_gravel_05",
+                "sounds/walk_gravel_06",
+                "sounds/walk_gravel_07",
+                "sounds/walk_gravel_08",
+                "sounds/walk_gravel_09",
+                "sounds/walk_gravel_10",
+                "sounds/walk_gravel_11",
+                "sounds/walk_gravel_12",
+                "sounds/walk_gravel_13"
+            ],
+            "RUN": [
+                "sounds/sprint_gravel_01",
+                "sounds/sprint_gravel_02",
+                "sounds/sprint_gravel_03",
+                "sounds/sprint_gravel_04",
+                "sounds/sprint_gravel_05",
+                "sounds/sprint_gravel_06",
+                "sounds/sprint_gravel_07",
+                "sounds/sprint_gravel_08",
+                "sounds/sprint_gravel_09",
+                "sounds/sprint_gravel_10",
+                "sounds/sprint_gravel_11",
+                "sounds/sprint_gravel_12"
+            ],
+            "WALK": [
+                "sounds/run_gravel_01",
+                "sounds/run_gravel_02",
+                "sounds/run_gravel_03",
+                "sounds/run_gravel_04",
+                "sounds/run_gravel_05",
+                "sounds/run_gravel_06",
+                "sounds/run_gravel_07",
+                "sounds/run_gravel_08"
+            ],
+            "LAND": [
+                "sounds/landing_gravel_01",
+                "sounds/landing_gravel_02",
+                "sounds/landing_gravel_03",
+                "sounds/landing_gravel_04",
+                "sounds/landing_gravel_05",
+                "sounds/landing_gravel_06",
+                "sounds/landing_gravel_07",
+                "sounds/landing_gravel_08",
+                "sounds/landing_gravel_09"
+            ]
+        },
+        "metal": {
+            "CROUCH": [
+                "sounds/walk_metal1",
+                "sounds/walk_metal2",
+                "sounds/walk_metal3",
+                "sounds/walk_metal4",
+                "sounds/walk_metal5",
+                "sounds/walk_metal6"
+            ],
+            "RUN": [
+                "sounds/sprint_metal1",
+                "sounds/sprint_metal2",
+                "sounds/sprint_metal3",
+                "sounds/sprint_metal4",
+                "sounds/sprint_metal5",
+                "sounds/sprint_metal6"
+            ],
+            "WALK": [
+                "sounds/run_metal1",
+                "sounds/run_metal2",
+                "sounds/run_metal3",
+                "sounds/run_metal4",
+                "sounds/run_metal5",
+                "sounds/run_metal6"
+            ],
+            "LAND": [
+                "sounds/landing_metal1",
+                "sounds/landing_metal2",
+                "sounds/landing_metal3"
+            ]
+        },
+        "plastic": {
+            "CROUCH": [
+                "sounds/walk_plastic_01",
+                "sounds/walk_plastic_02",
+                "sounds/walk_plastic_03",
+                "sounds/walk_plastic_04",
+                "sounds/walk_plastic_05",
+                "sounds/walk_plastic_06",
+                "sounds/walk_plastic_07",
+                "sounds/walk_plastic_08",
+                "sounds/walk_plastic_09",
+                "sounds/walk_plastic_10",
+                "sounds/walk_plastic_11",
+                "sounds/walk_plastic_12",
+                "sounds/walk_plastic_13",
+                "sounds/walk_plastic_14",
+                "sounds/walk_plastic_15",
+                "sounds/walk_plastic_16"
+            ],
+            "RUN": [
+                "sounds/sprint_plastic_01",
+                "sounds/sprint_plastic_02",
+                "sounds/sprint_plastic_03",
+                "sounds/sprint_plastic_04",
+                "sounds/sprint_plastic_05",
+                "sounds/sprint_plastic_06",
+                "sounds/sprint_plastic_07",
+                "sounds/sprint_plastic_08",
+                "sounds/sprint_plastic_09",
+                "sounds/sprint_plastic_10",
+                "sounds/sprint_plastic_11",
+                "sounds/sprint_plastic_12"
+            ],
+            "WALK": [
+                "sounds/run_plastic_01",
+                "sounds/run_plastic_02",
+                "sounds/run_plastic_03",
+                "sounds/run_plastic_04",
+                "sounds/run_plastic_05",
+                "sounds/run_plastic_06",
+                "sounds/run_plastic_07",
+                "sounds/run_plastic_08",
+                "sounds/run_plastic_09",
+                "sounds/run_plastic_10",
+                "sounds/run_plastic_11",
+                "sounds/run_plastic_12",
+                "sounds/run_plastic_13",
+                "sounds/run_plastic_14",
+                "sounds/run_plastic_15",
+                "sounds/run_plastic_16"
+            ],
+            "LAND": [
+                "sounds/landing_plastic_01",
+                "sounds/landing_plastic_02",
+                "sounds/landing_plastic_03",
+                "sounds/landing_plastic_04",
+                "sounds/landing_plastic_05",
+                "sounds/landing_plastic_06"
+            ]
+        },
+        "glass": {
+            "CROUCH": [
+                "sounds/walk_glass_01",
+                "sounds/walk_glass_02",
+                "sounds/walk_glass_03",
+                "sounds/walk_glass_04",
+                "sounds/walk_glass_05",
+                "sounds/walk_glass_06",
+                "sounds/walk_glass_07",
+                "sounds/walk_glass_08",
+                "sounds/walk_glass_09",
+                "sounds/walk_glass_10",
+                "sounds/walk_glass_11"
+            ],
+            "RUN": [
+                "sounds/sprint_glass_01",
+                "sounds/sprint_glass_02",
+                "sounds/sprint_glass_03",
+                "sounds/sprint_glass_04",
+                "sounds/sprint_glass_05",
+                "sounds/sprint_glass_06",
+                "sounds/sprint_glass_07",
+                "sounds/sprint_glass_08",
+                "sounds/sprint_glass_09",
+                "sounds/sprint_glass_10"
+            ],
+            "WALK": [
+                "sounds/run_glass_01",
+                "sounds/run_glass_02",
+                "sounds/run_glass_03",
+                "sounds/run_glass_04",
+                "sounds/run_glass_05"
+            ],
+            "LAND": [
+                "sounds/landing_glass_01",
+                "sounds/landing_glass_02",
+                "sounds/landing_glass_03",
+                "sounds/landing_glass_04",
+                "sounds/landing_glass_05",
+                "sounds/landing_glass_06",
+                "sounds/landing_glass_07"
+            ]
+        },
+        "whole_glass": {
+            "CROUCH": [
+                "sounds/walk_whole_glass_01",
+                "sounds/walk_whole_glass_02",
+                "sounds/walk_whole_glass_03",
+                "sounds/walk_whole_glass_04",
+                "sounds/walk_whole_glass_05",
+                "sounds/walk_whole_glass_06",
+                "sounds/walk_whole_glass_07",
+                "sounds/walk_whole_glass_08",
+                "sounds/walk_whole_glass_09",
+                "sounds/walk_whole_glass_10",
+                "sounds/walk_whole_glass_11",
+                "sounds/walk_whole_glass_12"
+            ],
+            "RUN": [
+                "sounds/sprint_whole_glass_01",
+                "sounds/sprint_whole_glass_02",
+                "sounds/sprint_whole_glass_03",
+                "sounds/sprint_whole_glass_04",
+                "sounds/sprint_whole_glass_05",
+                "sounds/sprint_whole_glass_06",
+                "sounds/sprint_whole_glass_07",
+                "sounds/sprint_whole_glass_08",
+                "sounds/sprint_whole_glass_09",
+                "sounds/sprint_whole_glass_10",
+                "sounds/sprint_whole_glass_11",
+                "sounds/sprint_whole_glass_12"
+            ],
+            "WALK": [
+                "sounds/run_whole_glass_01",
+                "sounds/run_whole_glass_02",
+                "sounds/run_whole_glass_03",
+                "sounds/run_whole_glass_04",
+                "sounds/run_whole_glass_05",
+                "sounds/run_whole_glass_06",
+                "sounds/run_whole_glass_07",
+                "sounds/run_whole_glass_08",
+                "sounds/run_whole_glass_09",
+                "sounds/run_whole_glass_10",
+                "sounds/run_whole_glass_11",
+                "sounds/run_whole_glass_12"
+            ],
+            "LAND": [
+                "sounds/landing_whole_glass_01",
+                "sounds/landing_whole_glass_02",
+                "sounds/landing_whole_glass_03",
+                "sounds/landing_whole_glass_04",
+                "sounds/landing_whole_glass_05",
+                "sounds/landing_whole_glass_06",
+                "sounds/landing_whole_glass_07",
+                "sounds/landing_whole_glass_08"
+            ]
+        },
+        "grass": {
+            "CROUCH": [
+                "sounds/walk2_grasslow_01",
+                "sounds/walk2_grasslow_02",
+                "sounds/walk2_grasslow_03",
+                "sounds/walk2_grasslow_04",
+                "sounds/walk2_grasslow_05",
+                "sounds/walk2_grasslow_06",
+                "sounds/walk2_grasslow_07",
+                "sounds/walk2_grasslow_08"
+            ],
+            "RUN": [
+                "sounds/sprint2_grasslow_01",
+                "sounds/sprint2_grasslow_02",
+                "sounds/sprint2_grasslow_03",
+                "sounds/sprint2_grasslow_04",
+                "sounds/sprint2_grasslow_05",
+                "sounds/sprint2_grasslow_06",
+                "sounds/sprint2_grasslow_07",
+                "sounds/sprint2_grasslow_08"
+            ],
+            "WALK": [
+                "sounds/run2_grasslow_01",
+                "sounds/run2_grasslow_02",
+                "sounds/run2_grasslow_03",
+                "sounds/run2_grasslow_04",
+                "sounds/run2_grasslow_05",
+                "sounds/run2_grasslow_06",
+                "sounds/run2_grasslow_07",
+                "sounds/run2_grasslow_08"
+            ],
+            "LAND": [
+                "sounds/landing_grasslow_01",
+                "sounds/landing_grasslow_02",
+                "sounds/landing_grasslow_03",
+                "sounds/landing_grasslow_04",
+                "sounds/landing_grasslow_05",
+                "sounds/landing_grasslow_06",
+                "sounds/landing_grasslow_07",
+                "sounds/landing_grasslow_08"
             ]
         }
     }

@@ -7,6 +7,8 @@ if not (ModCore) then
 	return
 end
 
+blt.xaudio.setup()
+
 local footstepJsonPath = string.format("mods/CustomFootstep/footstep_data.json", ModPath)
 local footstepJsonFile = io.open(footstepJsonPath, "r")
 local soundBank = {}
@@ -29,37 +31,25 @@ local soundInfos = {}
 for key, value in pairs(soundBank) do
 	local info = {}
 	for movementType, sounds in pairs(value) do
+		local buffers = {}
+		for key, sound in pairs(sounds) do
+			local path = "mods/CustomFootstep/Assets/" .. sound .. ".ogg"
+			buffers[#buffers + 1] = XAudio.Buffer:new(path)
+		end
 		info[movementType] = {
 			currentIndex = 1,
 			maxIndex = #sounds,
+			buffers = buffers
 		}
 	end
 	soundInfos[key] = info
 end
 
-local movieId = Idstring("movie")
-local soundsId = {}
-function CustomFootstepSound:playSound(sound)
-	local soundId = soundsId[sound]
-	if not (soundId) then
-		soundId = Idstring(sound)
-		soundsId[sound] = soundId
-	end
-	if not (PackageManager:has(movieId, soundId)) then
-		logConsole(string.format("cannot find asset : %s", tostring(sound)))
-		return
-	end
-	local volume = managers.user:get_setting("sfx_volume")
-	local percentage = (volume - tweak_data.menu.MIN_SFX_VOLUME) / (tweak_data.menu.MAX_SFX_VOLUME - tweak_data.menu.MIN_SFX_VOLUME)
-	managers.menu_component._main_panel:video({
-		name = name,
-		video = sound,
-		visible = false,
-		loop = false
-	}):set_volume_gain(percentage)
+function CustomFootstepSound:playSound(buffer)
+	local audioSrc = XAudio.UnitSource:new(XAudio.PLAYER, buffer)
+	audioSrc:set_volume(1)
 end
 
-local origin_play_footstep = PlayerSound.play_footstep
 function CustomFootstepSound:footstepEvent(material, movementType)
 	local materialName = tweak_data.materials[material:key()]
 	local soundMaterial = materialDefine[materialName]
@@ -76,13 +66,13 @@ function CustomFootstepSound:footstepEvent(material, movementType)
 	end
 
 	local soundInfo = soundInfos[soundMaterial][movementType]
-	local soundFile = footstepSounds[soundInfo.currentIndex]
+	local buffer = soundInfo.buffers[soundInfo.currentIndex]
 	soundInfo.currentIndex = soundInfo.currentIndex + 1
 	if soundInfo.currentIndex > soundInfo.maxIndex then
 		soundInfo.currentIndex = 1
 	end
-
-	CustomFootstepSound:playSound(soundFile)
+	
+	CustomFootstepSound:playSound(buffer)
 end
 
 --[[ Hooks ]] --
